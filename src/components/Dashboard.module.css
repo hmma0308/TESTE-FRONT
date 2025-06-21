@@ -1,0 +1,139 @@
+.dashboardContainer {
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.dashboardTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-escura);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.dashboardNav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navButton {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--cor-cinza);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.navButton:hover {
+  color: var(--cor-primaria);
+}
+
+.navButton.active {
+  color: var(--cor-primaria);
+  border-bottom-color: var(--cor-primaria);
+  font-weight: 600;
+}
+
+.wipTag {
+  font-size: 0.7rem;
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+
+.dashboardContent {
+  min-height: 300px; 
+  padding-top: 1rem;
+}
+
+.historySection h3, .investmentsSection h3 {
+  font-size: 1.5rem;
+  color: var(--cor-escura);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.simulationList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.simulationCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.simulationCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+
+.simulationInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.simulationTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  margin-bottom: 0.25rem;
+}
+
+.simulationInfo span {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.deleteButton {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.deleteButton:hover {
+  background-color: #dc2626;
+}
+
+.emptyMessage, .errorMessage {
+  color: var(--cor-cinza);
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+}
+.errorMessage {
+    color: #dc2626;
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+    border-radius: 6px;
+} 

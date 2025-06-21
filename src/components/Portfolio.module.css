@@ -1,0 +1,53 @@
+.portfolioContainer {
+  padding: 1rem;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.portfolioSummary {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.portfolioSummary h3 {
+  margin-bottom: 0.5rem;
+  color: var(--cor-escura);
+}
+
+.portfolioValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+.assetsList h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--cor-escura);
+}
+
+.assetsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.assetsTable th,
+.assetsTable td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0; 
+}
+
+.assetsTable th {
+  background-color: #e9ecef;
+  font-weight: 600;
+  color: var(--cor-escura);
+}
+
+.assetsTable tbody tr:hover {
+  background-color: #f8f9fa
+}
